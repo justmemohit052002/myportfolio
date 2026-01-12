@@ -1,15 +1,18 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
 
-export const HERO_CONTENT = `I am a frontend developer with a year of experience specializing in ReactJS and React Native. I have a strong background in JavaScript, HTML, CSS, and a passion for UI/UX design, ensuring that my applications are both functional and visually appealing. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `
+I’m a passionate Software Developer focused on building modern, responsive, and user-friendly web applications.
 
-export const ABOUT_TEXT = `I am Mohit Singh Chouhan, a frontend developer with a Bachelor of Technology in Computer Science Engineering from Chameli Devi Group of Institutions, Indore. With one year of freelance experience, I specialize in ReactJS and React Native, building dynamic and responsive user interfaces for web and mobile applications. I am proficient in JavaScript, HTML, CSS, and utilize modern tools like Vite and SWC for efficient development.
+I specialize in front-end development using ReactJS and React Native, and I’m currently expanding my skills in Java backend development with Spring Boot. I enjoy turning ideas into scalable digital experiences and continuously improving my craft through real-world projects.`;
 
-I have a keen interest in UI/UX design, ensuring my applications are both functional and visually appealing. My passion for technology drives me to stay updated with the latest trends and continuously improve my skills. Currently based in Indore, I am willing to relocate for the right opportunity.
+export const ABOUT_TEXT = `I am a passionate and detail-oriented Software Developer with a strong foundation in front-end development and hands-on experience building responsive, user-friendly web applications. I enjoy turning ideas into clean, functional interfaces using modern technologies.
 
-Aside from coding, I am also passionate about cricket and have a dream of playing for the Indian team. I am dedicated, hardworking, and always eager to take on new challenges, both professionally and personally.`;
+I have worked with ReactJS, React Native, JavaScript, HTML, CSS, and Tailwind CSS, and I am currently expanding my skills in Java backend development using Spring Boot. I enjoy learning new technologies and applying them to real-world projects to improve performance and user experience.
+
+I have developed multiple projects, including web applications and landing pages, and I continuously focus on writing clean, maintainable code. I am actively seeking opportunities where I can contribute, learn, and grow as a developer while building impactful software solutions.`;
 
 export const EXPERIENCES = [
   {
@@ -43,38 +46,48 @@ Integrated a language translator feature into the applications to support multil
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Flood Risk Assessment Aystem",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Flood Risk Assessment System is a web-based application that analyzes environmental and geographical data to identify flood-prone areas. It helps users assess flood risks, visualize potential impact zones, and support early decision-making for disaster management and prevention.",
+    technologies: ["Next.js", "FastAPI", "Python", "Google Gemini API"]
+
   },
   {
-    title: "Task Management App",
+    title: "expense-tracker-app",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "A comprehensive mobile application built with React Native and Expo for tracking personal expenses and managing multiple wallets.",
+    technologies: [
+  "React Native (Expo)",
+  "Firebase Authentication",
+  "Cloud Firestore",
+  "React Navigation",
+  "React Native Reanimated",
+  "React Native Element Dropdown",
+  "React Native Gifted Charts",
+  "Phosphor Icons"
+],
   },
   {
     title: "Portfolio Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Portfolio Website is a modern, responsive personal portfolio built to showcase projects, skills, and experience. It features a clean UI, smooth animations, and optimized performance to create an engaging user experience while highlighting professional work and technical expertise",
+    technologies: ["React", "JavaScript", "HTML", "CSS"],
   },
   {
-    title: "Blogging Platform",
+    title: "Guest House Landing Page",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "This project is a simple and responsive guest house landing page designed to showcase accommodation details in a clean and attractive way. It focuses on a user-friendly layout, smooth visuals, and a modern interface to create a welcoming experience for visitors and improve guest engagement.",
+    technologies: ["HTML", "CSS", "React", "JavaScript"],
   },
 ];
 
 export const CONTACT = {
   address:
-    "Sector A, Sarvanand Nagar, Indrapuri Colony, Indore, Madhya Pradesh, 452014 ",
+    "Kharadi, Pune, Maharashtra, India",
   phoneNo: "+91 772 581 2910 ",
   email: "mohit2002pc@gmail.com",
 };

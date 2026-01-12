@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/kevinRushProfile.png";
+import profilePic from "../assets/MohitProfile.png";
 import { motion } from "framer-motion";
-import WaterDropGrid from '../constants/WaterDropGrid'; // Ensure to import WaterDropGrid
+// import WaterDropGrid from '../constants/WaterDropGrid'; // Ensure to import WaterDropGrid
 
 const container = (delay) => ({
     hidden: {
@@ -18,7 +18,7 @@ const container = (delay) => ({
 const Hero = () => {
     return (
         <div className="border-b border-neutral-900 pb-8 lg:mb-35">
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap  ">
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start">
                         <motion.h1
@@ -46,9 +46,9 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8 relative">
-                    <div className="flex justify-center">
-                        <WaterDropGrid className="mb-30 md:mb-40 lg:mb-60 md:ml-40" /> {/* Added responsive margin-bottom */}
-                    </div>
+                    {/* <div className="flex justify-center">
+                        <WaterDropGrid className="mb-30 md:mb-40 lg:mb-60 md:ml-40" />
+                    </div> */}
                     <div className="flex justify-center absolute inset-0 mb-20"> {/* Positioning the image above the grid */}
                         <motion.img
                             initial={{ x: 100, opacity: 0 }}
