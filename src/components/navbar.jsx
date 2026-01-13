@@ -13,6 +13,7 @@ const CHARS = "!@#$%^&*():{};|,.<>/?";
 const EncryptButton = () => {
     const intervalRef = useRef(null);
     const [text, setText] = useState(TARGET_TEXT);
+    const resumeLink = "https://drive.google.com/file/d/1FBPxctLwnwQzmo-TFAG1STxkUTaBuYwh/view?usp=sharing";
 
     const scramble = () => {
         let pos = 0;
@@ -42,6 +43,10 @@ const EncryptButton = () => {
         setText(TARGET_TEXT);
     };
 
+    const handleClick = () => {
+        window.open(resumeLink, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <motion.button
             whileHover={{
@@ -52,9 +57,10 @@ const EncryptButton = () => {
             }}
             onMouseEnter={scramble}
             onMouseLeave={stopScramble}
+            onClick={handleClick}
             className="group relative overflow-hidden rounded-lg border-[1px] border-neutral-500 bg-neutral-700 
                         px-2 py-1 sm:px-4 sm:py-2 lg:px-6 lg:py-3 font-mono font-medium uppercase text-neutral-300 
-                        text-xs sm:text-sm md:text-base lg:text-lg transition-colors hover:text-indigo-300"
+                        text-xs sm:text-sm md:text-base lg:text-lg transition-colors hover:text-indigo-300 cursor-pointer"
         >
             <div className="relative z-10 flex items-center gap-1 sm:gap-2">
                 <FiLock />
@@ -87,10 +93,18 @@ const Navbar = () => {
                 <img className="mx-2 w-16 h-16 mt-5" src={logo} alt="logo" />
             </div>
             <div className="m-8 mr-10 flex items-center justify-center gap-4 text-2xl sm:mr-10">
-                <FaLinkedin />
-                <FaGithub />
-                <FaSquareXTwitter />
-                <FaInstagram />
+                <a href="https://linkedin.com/in/mohit-singh-3b2325223" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-purple-500 transition-colors">
+                    <FaLinkedin />
+                </a>
+                <a href="https://github.com/justmemohit052002" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-purple-500 transition-colors">
+                    <FaGithub />
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-purple-500 transition-colors">
+                    <FaSquareXTwitter />
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-purple-500 transition-colors">
+                    <FaInstagram />
+                </a>
                 <EncryptButton />
             </div>
         </nav>
